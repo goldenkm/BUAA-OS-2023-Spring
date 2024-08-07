@@ -1,0 +1,4 @@
+user/lib/fd.c:103:	r = (*dev->dev_close)(fd);
+user/lib/fd.c:192:	r = (*dev->dev_read)(fd, buf, n, fd->fd_offset);
+user/lib/fd.c:235:	r = (*dev->dev_write)(fd, buf, n, fd->fd_offset);
+user/lib/fd.c:268:	return (*dev->dev_stat)(fd, stat);

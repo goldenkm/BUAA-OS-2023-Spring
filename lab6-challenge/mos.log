@@ -1,0 +1,24 @@
+gxemul -T -C R3000 -M 64 -V -E testmips  target/mos
+GXemul 0.7.0+dfsg    Copyright (C) 2003-2021  Anders Gavare
+Read the source code and/or documentation for other Copyright messages.
+
+net: 
+    simulated network: 
+        10.0.0.0/8 (max outgoing: TCP=100, UDP=100)
+        gateway+nameserver: 10.0.0.254 (60:50:40:30:20:10)
+        nameserver uses real nameserver 202.112.128.51
+machine: 
+    model: MIPS test machine
+    cpu: R3000 (32-bit, I+D = 4+4 KB, L2 = 0 KB)
+    memory: 64 MB
+    file: loading target/mos
+        ELF32 LSB (LE), entry point 0x80011930
+        chunk 0 (0x70000003) @ 0x19188, vaddr 0x80018188 len=0x18
+        chunk 1 (0x70000000) @ 0x19170, vaddr 0x80018170 len=0x18
+        chunk 2 (load) @ 0x1000, vaddr 0x80000000 len=0x7b050
+        209 symbol entries at 0x4ea90
+        2123 bytes of symbol strings at 0x4f7a0
+    cpu0: starting at 0x80011930 <_start>
+-------------------------------------------------------------------------------
+
+GXemul> 
